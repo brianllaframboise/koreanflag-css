@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding:0;
+    background-color: #f0f0f0;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.flag-border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 300px;
+    border: 1px solid #333;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.center-circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(25deg);
+}
+.top-half-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 75px;
+    background-color: rgb(198, 12, 48);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.btm-half-circle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 75px;
+    background-color: rgb(0, 51, 160);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.small-red{
+    position:absolute;
+    top: 25%;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    background-color: rgb(198, 12, 48); 
+}
+.small-blue{
+    position:absolute;
+    top: 25%;
+    right: 0;
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    background-color: rgb(0, 51, 160);
+}
+
+.solid-line{
+    position: relative;
+    width: 75px;
+    height: 12.5px;
+    background-color: black;
+    margin-bottom: 6.25px;
+}
+.solid-line:last-child{
+    margin-bottom: 0px;
+}
+.white-dash{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 15px;
+    background-color: white;
+}
+
+.top-left-lines {
+    position: absolute;
+    transform: translate(-115px, -75px) rotate(-56deg);
+}
+.top-right-lines {
+    position: absolute;
+    transform: translate(115px, -75px) rotate(56deg);
+}
+.btm-left-lines {
+    position: absolute;
+    transform: translate(-115px, 75px) rotate(56deg);
+}
+.btm-right-lines {
+    position: absolute;
+    transform: translate(115px, 75px) rotate(-56deg);
+}
